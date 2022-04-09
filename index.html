@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="assets/favicon.ico">
+  <title>portfolio</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo"></div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#skills" class="nav-link" data-i18="skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link" data-i18="portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#video" class="nav-link" data-i18="video">Video</a>
+          </li>
+          <li class="nav-item">
+            <a href="#price" class="nav-link" data-i18="price">Price</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contacts" class="nav-link" data-i18="contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>      
+      <div class="switch-lng">
+        <span class="lng-span lng-span-active en">en</span>
+        <span class="lng-span"> / </span>
+        <span class="lng-span ru">ru</span>
+      </div>
+      <div class="toggle">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title" data-i18="hero-title">Alexa Rise</h1>
+          <p class="hero-text" data-i18="hero-text">
+            Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise
+          </p>
+          <button class="btn" data-i18="hire">Hire me</button>
+        </div>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="section-title">
+          <span data-i18="skills">Skills</span>
+        </h2>
+        <div class="skills-items">
+          <div class="skill-item">
+            <div class="skill-title" data-i18="skill-title-1">Digital photography</div>
+            <div class="skill-text" data-i18="skill-text-1">
+              High-quality photos in the studio and on the nature
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-title" data-i18="skill-title-2">Video shooting</div>
+            <div class="skill-text" data-i18="skill-text-2">
+              Capture your moments so that they always stay with you
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-title" data-i18="skill-title-3">Rotouch</div>
+            <div class="skill-text" data-i18="skill-text-3">
+              I strive to make photography surpass
+              reality
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-title" data-i18="skill-title-4">Audio</div>
+            <div class="skill-text" data-i18="skill-text-4">
+              Professional sounds recording for video, advertising, portfolio
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="section-title">
+          <span data-i18="portfolio">Portfolio</span>
+        </h2>
+        <div class="portfolio-btns">
+          <button class="btn portfolio-btn" data-image="winter" data-i18="winter">Winter</button>
+          <button class="btn portfolio-btn" data-image="spring" data-i18="spring">Spring</button>        
+          <button class="btn portfolio-btn" data-image="summer" data-i18="summer">Summer</button>
+          <button class="btn portfolio-btn portfolio-btn-active" data-image="autumn" data-i18="autumn">
+            Autumn
+          </button>
+        </div>
+        <div class="portfolio-items">
+          <img src="./assets/img/autumn/1.jpg" alt="portfolio image" class="portfolio-img" />
+          <img src="./assets/img/autumn/2.jpg" alt="portfolio image" class="portfolio-img" />
+          <img src="./assets/img/autumn/3.jpg" alt="portfolio image" class="portfolio-img" />
+          <img src="./assets/img/autumn/4.jpg" alt="portfolio image" class="portfolio-img" />
+          <img src="./assets/img/autumn/5.jpg" alt="portfolio image" class="portfolio-img" />
+          <img src="./assets/img/autumn/6.jpg" alt="portfolio image" class="portfolio-img" />
+        </div>
+      </div>
+    </section>
+    <section class="video" id="video">
+      <div class="container">
+        <h2 class="section-title">
+          <span data-i18="video">Video</span>
+        </h2>        
+        <div class="video-player">
+          <div class="poster"></div>
+            <video class="viewer" src="assets/video/video.mp4"></video>
+            <div class="play-btn"></div>        
+          <div class="controls">
+            <div class="play-icon play"></div>
+            <input type="range" value="40" min="0" max="100" step="1" class="progress">
+            <div class="play-icon volume-icon"></div>
+            <input type="range" value="40" min="0" max="100" step="1" class="volume">            
+          </div>
+        </div>
+    </section>
+    <section class="price" id="price">
+      <div class="container">
+        <h2 class="section-title">
+          <span data-i18="price">Price</span>
+        </h2>
+        <div class="price-items">
+          <div class="price-item">
+            <h3 class="price-title">Standard</h3>
+            <div class="price-cost">500 $</div>
+            <div class="price-descripton">
+              <span data-i18="price-descripton-1-span-1">One location</span>
+              <span data-i18="price-descripton-1-span-2">120 photos in color</span>
+              <span data-i18="price-descripton-1-span-3">12 photos in retouch</span>
+              <span data-i18="price-descripton-1-span-4">Readiness 2-3 weeks</span>
+              <span data-i18="price-descripton-1-span-5">Make up, visage</span>
+            </div>
+            <button class="btn price-btn" data-i18="order">Order shooting</button>
+          </div>
+          <div class="price-item">
+            <h3 class="price-title">Premium</h3>
+            <div class="price-cost">700 $</div>
+            <div class="price-descripton">
+              <span data-i18="price-descripton-2-span-1">One or two locations</span>
+              <span data-i18="price-descripton-2-span-2">200 photos in color</span>
+              <span data-i18="price-descripton-2-span-3">20 photos in retouch</span>
+              <span data-i18="price-descripton-2-span-4">Readiness 1-2 weeks</span>
+              <span data-i18="price-descripton-2-span-5">Make up, visage</span>
+            </div>
+            <button class="btn price-btn" data-i18="order">Order shooting</button>
+          </div>
+          <div class="price-item">
+            <h3 class="price-title">Gold</h3>
+            <div class="price-cost">1000 $</div>
+            <div class="price-descripton">
+              <span data-i18="price-descripton-3-span-1">Tree locations or more</span>
+              <span data-i18="price-descripton-3-span-2">300 photos in color</span>
+              <span data-i18="price-descripton-3-span-3">50 photos in retouch</span>
+              <span data-i18="price-descripton-3-span-4">Readiness 1 week</span>
+              <span data-i18="price-descripton-3-span-5">Make up, visage, hairstyle</span>
+            </div>
+            <button class="btn price-btn" data-i18="order">Order shooting</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <div class="contacts-container">
+          <h2 class="contacts-title" data-i18="contact-me">Contact me</h2>
+          <input type="email" placeholder="E-mail" />
+          <input type="tel" placeholder="Phone" />
+          <textarea placeholder="Message"></textarea>
+          <button class="btn contacts-btn" data-i18="send-message">Send message</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-data">
+        <p class="copyright">©</p>
+        <p class="year">2022</p>
+        <a class="github-username" href="https://github.com/" target="_blank" rel="noopener noreferrer">github</a>
+      </div>
+      <a href="" class="rss"> Rolling Scopes School </a>
+      <ul class="social-list">
+        <li class="social-item inst"><a href="#"></a></li>
+        <li class="social-item fb"><a href="#"></a></li>
+        <li class="social-item tw"><a href="#"></a></li>
+        <li class="social-item pinterest"><a href="#"></a></li>
+      </ul>
+    </div>
+  </footer>
+  <div class="switch-theme"></div>
+  <script type="module" src="./index.js"></script>
+</body>
+
+</html>
